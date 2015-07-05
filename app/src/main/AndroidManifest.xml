@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.soa.smartlock"
+    android:versionCode="1"
+    android:versionName="1.0">
+
+    <uses-feature android:name="android.hardware.bluetooth_le" android:required="true"/>
+
+    <application
+        android:name=".SmartLockApplication"
+        android:label="Smart lock"
+        android:theme="@android:style/Theme.Holo.Light">
+
+        <activity android:name="com.soa.smartlock.activities.ListBeaconsActivity" android:label="Beacons" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"></action>
+                <category android:name="android.intent.category.LAUNCHER"></category>
+            </intent-filter>
+        </activity>
+
+        <activity android:name="com.soa.smartlock.activities.NotifyDemoActivity" android:label="Notificaciones" android:screenOrientation="portrait"></activity>
+
+        <activity android:name="com.soa.smartlock.activities.UnlockActivity" android:label="Desbloquear" android:screenOrientation="portrait"></activity>
+
+        <activity android:name="com.soa.smartlock.activities.UnlockedActivity" android:label="Desbloqueado" android:screenOrientation="portrait"></activity>
+    </application>
+
+</manifest>
