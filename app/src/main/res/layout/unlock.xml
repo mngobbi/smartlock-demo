@@ -5,11 +5,20 @@
               android:layout_width="match_parent"
               android:layout_height="match_parent">
 
-  <Button
-      android:id="@+id/unlock_button"
-      android:layout_width="match_parent"
-      android:layout_height="wrap_content"
-      android:onClick="unlock"
-      android:text="Abrir"/>
+    <ImageView android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="60dp"
+        android:padding="30dp"
+        android:focusable="true"
+        android:onClick="unlock"
+        android:src="@drawable/ic_lock_open_black_48dp"/>
 
+    <ImageView android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_gravity="center"
+        android:padding="30dp"
+        android:focusable="true"
+        android:background="#cccccc"
+        android:src="@drawable/ic_lock_black_48dp"/>
 </LinearLayout>
