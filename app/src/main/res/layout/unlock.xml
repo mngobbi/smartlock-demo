@@ -5,7 +5,7 @@
               android:layout_width="match_parent"
               android:layout_height="match_parent">
 
-    <ImageView android:layout_width="match_parent"
+    <ImageView android:id="@+id/unlocked" android:layout_width="match_parent"
         android:layout_height="200dp"
         android:layout_gravity="center"
         android:layout_marginTop="60dp"
@@ -14,11 +14,11 @@
         android:onClick="unlock"
         android:src="@drawable/ic_lock_open_black_48dp"/>
 
-    <ImageView android:layout_width="match_parent"
+    <ImageView android:id="@+id/locked" android:layout_width="match_parent"
         android:layout_height="200dp"
         android:layout_gravity="center"
         android:padding="30dp"
         android:focusable="true"
-        android:background="#cccccc"
+        android:onClick="lock"
         android:src="@drawable/ic_lock_black_48dp"/>
 </LinearLayout>
